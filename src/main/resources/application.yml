@@ -1,0 +1,27 @@
+server:
+    port: 6070
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: lastkingx2200
+        url: jdbc:mysql://localhost:3306/online
+        username: root
+    jpa:
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+
+    security:
+        oauth2:
+            client:
+                registration:
+                    google:
+                        client-id: 435500931007-nb2pqrk9ieuct06tnj9lleeb60hmae07.apps.googleusercontent.com
+                        client-secret: IJq2PVihS_z_OIhQsStk62Ak
+
+    #active-mq
+    activemq:
+        broker-url: tcp://localhost:61616
+        packages:
+            trust-all: true
